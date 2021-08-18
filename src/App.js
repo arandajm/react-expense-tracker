@@ -1,5 +1,5 @@
 import "./App.css";
-import ExpenseItem from "./components/ExpenseItem";
+import Expenses from "./components/Expenses";
 
 function App() {
   const expensesList = [
@@ -25,9 +25,7 @@ function App() {
   ];
   return (
     <div className="App">
-      {expensesList.map((expense) => (
-        <ExpenseItem key={expense.id} {...expense} />
-      ))}
+      <Expenses items={expensesList} />
     </div>
   );
 }
