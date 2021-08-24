@@ -5,7 +5,7 @@ import "./styles.css";
 
 const Expenses = ({ items }) => {
   return (
-    <div className="expense">
+    <div className="expenses">
       {items.map((item) => (
         <ExpenseItem key={item.id} {...item} />
       ))}
