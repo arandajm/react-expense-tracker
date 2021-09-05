@@ -34,9 +34,9 @@ const ExpenseForm = ({ onSaveExpenseData }) => {
     ev.preventDefault();
 
     const expenseData = {
-      title: enteredDate,
+      title: enteredTitle,
       amount: enteredAmount,
-      date: enteredDate,
+      date: new Date(enteredDate),
     };
 
     console.log("clicked button");
@@ -74,7 +74,7 @@ const ExpenseForm = ({ onSaveExpenseData }) => {
           <input
             type="date"
             min="2019-01-01"
-            max="2022-12-12"
+            max="2022-12-31"
             value={enteredDate}
             onChange={dateChangeHandler}
           />
