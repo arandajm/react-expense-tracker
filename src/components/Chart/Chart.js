@@ -1,6 +1,6 @@
 import React from "react";
 import ChartBar from "./ChartBar";
-import "./Chart.css";
+import styles from "./Chart.module.css";
 
 const Chart = ({ dataPoints }) => {
   // Arrays of values
@@ -8,7 +8,7 @@ const Chart = ({ dataPoints }) => {
   // Get the max value
   const valueMaximum = Math.max(...dataPointsValues);
   return (
-    <div className="chart">
+    <div className={styles.chart}>
       {dataPoints.map((dataPoint) => (
         <ChartBar
           {...dataPoint}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./ExpenseForm.css";
+import styles from "./ExpenseForm.module.css";
 
 const namespace = "new-expense";
 
@@ -50,8 +50,8 @@ const ExpenseForm = ({ onSaveExpenseData, onCancel }) => {
 
   return (
     <form onSubmit={submitHandler}>
-      <div className={`${namespace}__controls`}>
-        <div className="new-expense__control">
+      <div className={styles[`${namespace}__controls`]}>
+        <div className={styles[`${namespace}__control`]}>
           <label>Title</label>
           <input
             type="text"
@@ -59,7 +59,7 @@ const ExpenseForm = ({ onSaveExpenseData, onCancel }) => {
             onChange={titleChangeHandler}
           />
         </div>
-        <div className={`${namespace}__control`}>
+        <div className={styles[`${namespace}__control`]}>
           <label>Amount</label>
           <input
             type="number"
@@ -69,7 +69,7 @@ const ExpenseForm = ({ onSaveExpenseData, onCancel }) => {
             onChange={amountChangeHandler}
           />
         </div>
-        <div className={`${namespace}__control`}>
+        <div className={styles[`${namespace}__control`]}>
           <label>Date</label>
           <input
             type="date"
@@ -80,7 +80,7 @@ const ExpenseForm = ({ onSaveExpenseData, onCancel }) => {
           />
         </div>
       </div>
-      <div className={`${namespace}__actions`}>
+      <div className={styles[`${namespace}__actions`]}>
         <button type="button" onClick={() => onCancel(false)}>
           Cancel
         </button>

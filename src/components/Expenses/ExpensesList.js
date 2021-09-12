@@ -1,12 +1,16 @@
 import ExpenseItem from "../Expenses/ExpenseItem";
-import "./ExpensesList.css";
+import styles from "./ExpensesList.module.css";
 
 const ExpensesList = ({ items }) => {
   if (items.length === 0) {
-    return <h2 className="expenses-list__fallback">No expenses item found!</h2>;
+    return (
+      <h2 className={styles["expenses-list__fallback"]}>
+        No expenses item found!
+      </h2>
+    );
   }
   return (
-    <ul className="expenses-list">
+    <ul className={styles["expenses-list"]}>
       {items.map((item) => (
         <ExpenseItem key={item.id} {...item} />
       ))}

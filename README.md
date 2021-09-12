@@ -10,6 +10,7 @@ RET is a React application to keep track of your expenses.
 - Passing data between components with props (parent to child) and function (child to parent).
 - Working with lists and conditional content.
 - React Hooks.
+- Component-Scoped Styles with CSS Modules.
 
 ## Installation
 

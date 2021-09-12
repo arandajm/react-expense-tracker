@@ -4,7 +4,7 @@ import ExpensesChart from "./ExpensesChart";
 import ExpensesFilter from "../Expenses/ExpensesFilter";
 import ExpensesList from "./ExpensesList";
 
-import "./Expenses.css";
+import styles from "./Expenses.module.css";
 
 const Expenses = ({ items }) => {
   const [selectedYear, setSelectedYear] = useState("2019");
@@ -19,7 +19,7 @@ const Expenses = ({ items }) => {
   };
 
   return (
-    <Card className="expenses">
+    <Card className={styles.expenses}>
       <ExpensesFilter
         selected={selectedYear}
         onSaveSelectedYear={saveSelectedYearHandler}
