@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import ExpenseForm from "../ExpenseForm";
-import "./styles.css";
+import ExpenseForm from "./ExpenseForm";
+import "./NewExpense.css";
 
 const NewExpense = ({ onAddExpense }) => {
   const [showForm, setShowForm] = useState(false);

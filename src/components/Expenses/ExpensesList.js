@@ -1,5 +1,5 @@
-import ExpenseItem from "../ExpenseItem";
-import "./styles.css";
+import ExpenseItem from "../Expenses/ExpenseItem";
+import "./ExpensesList.css";
 
 const ExpensesList = ({ items }) => {
   if (items.length === 0) {

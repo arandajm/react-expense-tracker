@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Card from "../Card";
-import ExpensesChart from "../ExpensesChart";
-import ExpensesFilter from "../ExpensesFilter";
-import ExpensesList from "../ExpensesList";
+import Card from "../UI/Card";
+import ExpensesChart from "./ExpensesChart";
+import ExpensesFilter from "../Expenses/ExpensesFilter";
+import ExpensesList from "./ExpensesList";
 
-import "./styles.css";
+import "./Expenses.css";
 
 const Expenses = ({ items }) => {
   const [selectedYear, setSelectedYear] = useState("2019");

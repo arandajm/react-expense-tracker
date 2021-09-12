@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css";
+import "./ExpensesFilter.css";
 
 const ExpensesFilter = ({ onSaveSelectedYear, selected }) => {
   const dropdownChangeHandler = (ev) => {

@@ -1,9 +1,8 @@
 import React from "react";
-import ChartBar from "../ChartBar";
-import "./styles.css";
+import ChartBar from "./ChartBar";
+import "./Chart.css";
 
 const Chart = ({ dataPoints }) => {
-  console.log("dataPoints:", dataPoints);
   // Arrays of values
   const dataPointsValues = dataPoints.map((dataPoint) => dataPoint.value);
   // Get the max value
