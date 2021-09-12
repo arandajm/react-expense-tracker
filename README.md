@@ -1,6 +1,8 @@
 # React Expenses Tracker - RET
 
-RET is a React application to keep track of your expenses.
+RET is a React SPA application to keep track of your expenses.
+
+![Grabacion-de-pantalla-2021-09-12](https://user-images.githubusercontent.com/24915167/133004993-a691f407-17c1-4301-b505-fa0b51a4f193.gif)
 
 ## 🎯 Features
 
